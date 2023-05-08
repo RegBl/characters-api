@@ -1,7 +1,6 @@
 package regbl.github.io.models.responses
 
 import regbl.github.io.models.Character
-import regbl.github.io.models.Attributes
 
 data class CharacterResponse(
     val ac: Int,

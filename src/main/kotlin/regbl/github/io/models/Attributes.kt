@@ -1,5 +1,8 @@
 package regbl.github.io.models
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class Attributes(
     val strength: Int,
     val dexterity: Int,

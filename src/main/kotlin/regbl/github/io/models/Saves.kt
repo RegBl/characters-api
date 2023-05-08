@@ -1,5 +1,8 @@
 package regbl.github.io.models
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class Saves(
     val wands: Int,
     val breath: Int,
