@@ -1,6 +1,6 @@
-package regbl.github.io.models.responses
+package io.github.regbl.models.responses
 
-import regbl.github.io.models.Saves as SavesResponse
+import io.github.regbl.models.Saves as SavesResponse
 
 data class Saves(
     val breath: Int,

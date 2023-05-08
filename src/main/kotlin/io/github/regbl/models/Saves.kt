@@ -1,4 +1,4 @@
-package regbl.github.io.models
+package io.github.regbl.models
 
 import kotlinx.serialization.Serializable
 

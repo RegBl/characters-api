@@ -1,4 +1,4 @@
-package regbl.github.io.plugins
+package io.github.regbl.plugins
 
 import io.ktor.server.plugins.callloging.*
 import org.slf4j.event.*

@@ -1,9 +1,8 @@
-package regbl.github.io.plugins
+package io.github.regbl.plugins
 
 import io.ktor.server.routing.*
-import io.ktor.server.response.*
 import io.ktor.server.application.*
-import regbl.github.io.routes.characterRouting
+import io.github.regbl.routes.characterRouting
 
 fun Application.configureRouting() {
     routing {

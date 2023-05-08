@@ -1,7 +1,7 @@
-package regbl.github.io
+package io.github.regbl
 
 import io.ktor.server.application.*
-import regbl.github.io.plugins.*
+import io.github.regbl.plugins.*
 
 fun main(args: Array<String>): Unit =
     io.ktor.server.netty.EngineMain.main(args)

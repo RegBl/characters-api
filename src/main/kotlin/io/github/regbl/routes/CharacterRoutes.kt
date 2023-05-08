@@ -1,9 +1,9 @@
-package regbl.github.io.routes
+package io.github.regbl.routes
 
 import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import regbl.github.io.models.getDefaultCharacter
+import io.github.regbl.models.getDefaultCharacter
 
 fun Route.characterRouting() {
     route("/") {

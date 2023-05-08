@@ -1,6 +1,6 @@
-package regbl.github.io.models.responses
+package io.github.regbl.models.responses
 
-import regbl.github.io.models.Attributes
+import io.github.regbl.models.Attributes
 
 data class Attr(
     val cha: String,
