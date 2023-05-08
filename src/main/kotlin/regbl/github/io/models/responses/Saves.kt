@@ -1,5 +1,7 @@
 package regbl.github.io.models.responses
 
+import regbl.github.io.models.Saves as SavesResponse
+
 data class Saves(
     val breath: Int,
     val magic: Int,
@@ -8,12 +10,10 @@ data class Saves(
     val wands: Int
 )
 
-fun Saves.toSaves(): regbl.github.io.models.Saves {
-    return regbl.github.io.models.Saves(
-        wands = this.wands,
-        breath = this.breath,
-        stone = this.stone,
-        magic = this.magic,
-        poison = this.poison
-    )
-}
+fun Saves.toSaves() = SavesResponse(
+    wands = this.wands,
+    breath = this.breath,
+    stone = this.stone,
+    magic = this.magic,
+    poison = this.poison
+)

@@ -21,16 +21,13 @@ data class CharacterResponse(
     val toHit: List<List<Int>>
 )
 
-fun CharacterResponse.toCharacter(): Character {
-    return Character(
-        id = 0,
-        attributes = attr.toAttributes(),
-        saves = this.saves.toSaves(),
-        characterClass = this.characterClass,
-        level = 1,
-        ac = this.ac,
-        hp = this.hp,
-        xp = 0,
-        system = this.system
-    )
-}
+fun CharacterResponse.toCharacter() = Character(
+    attributes = attr.toAttributes(),
+    saves = this.saves.toSaves(),
+    characterClass = this.characterClass,
+    level = 1,
+    ac = this.ac,
+    hp = this.hp,
+    xp = 0,
+    system = this.system
+)

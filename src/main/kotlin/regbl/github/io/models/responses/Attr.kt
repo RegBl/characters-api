@@ -1,5 +1,7 @@
 package regbl.github.io.models.responses
 
+import regbl.github.io.models.Attributes
+
 data class Attr(
     val cha: String,
     val con: String,
@@ -9,13 +11,11 @@ data class Attr(
     val wis: String
 )
 
-fun Attr.toAttributes(): regbl.github.io.models.Attributes {
-    return regbl.github.io.models.Attributes(
-        strength = this.str.toInt(),
-        dexterity = this.dex.toInt(),
-        constitution = this.con.toInt(),
-        intelligence = this.int.toInt(),
-        wisdom = this.wis.toInt(),
-        charisma = this.cha.toInt()
-    )
-}
+fun Attr.toAttributes() = Attributes(
+    strength = this.str.toInt(),
+    dexterity = this.dex.toInt(),
+    constitution = this.con.toInt(),
+    intelligence = this.int.toInt(),
+    wisdom = this.wis.toInt(),
+    charisma = this.cha.toInt()
+)
